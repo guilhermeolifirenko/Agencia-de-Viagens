@@ -1,0 +1,814 @@
+@charset "UTF-8";
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/*  Variáveis   */
+
+:root {
+    --cor0: #8DCBF2;
+    --cor1: #03658C;
+    --cor2: #024959;
+    --cor3: #FD7E03;
+    --cor4: #F45602;
+    --cor5: white;
+    --cor6: black;
+    
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-bebas: 'Bebas Neue', cursive;
+    --font-satisfy: 'Satisfy', cursive;
+}
+
+body {
+    font-family: var(--font-padrao);
+}
+
+header {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: auto;
+}
+
+main {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.527);
+}
+
+/*  Top Header  */
+div.top-header {
+    background-color: var(--cor2);
+    color: var(--cor5);
+    display: flex;
+    justify-content: space-between;
+}
+
+div.top-header > ul {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+}
+
+div.top-header li {
+    margin: 0px 10px;
+}
+
+div.top-header i.fas {
+    margin-right: 10px;
+}
+
+div.top-header a {
+    color: var(--cor5);
+}
+
+/*  Navbar  */
+.navbar {
+    max-width: 1440px;
+    min-width: 320px;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+.navbar li.nav-item {
+    margin: 0px 5px !important;
+}
+
+.navbar a.nav-link {
+    color: var(--cor6);
+    padding: 10px 20px !important;
+    border-bottom: 2px solid var(--cor5);
+    transition: 0.5s ease;
+}
+
+.navbar a.nav-link:hover {
+    color: var(--cor6);
+    border-bottom-color: var(--cor4);
+}
+
+/*  Banner  */
+#banner {
+    position: relative;
+}
+
+#banner .swiper {
+    height: 550px;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#banner .legenda {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.788);
+}
+
+#banner p.titulo-banner {
+    font-size: 4em;
+    font-family: var(--font-bebas);
+    color: var(--cor5);
+    position: relative;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#banner p {
+    font-size: 1.8em;
+    font-family: var(--font-satisfy);
+    color: var(--cor4);
+    position: relative;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*  Destino  */
+#destino {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.418);
+}
+
+#destino .opcoes-destino {
+    background-color: var(--cor5);
+    display: flex;
+}
+
+#destino .item {
+    color: var(--cor4);
+    font-weight: bold;
+    align-self: center;
+    padding: 0px 0px 0px 20px;
+}
+
+#destino .btn-theme {
+    width: 100%;
+    font-weight: bold;
+    padding: 50px 10px;
+    background-color: var(--cor3);
+    border: none;
+    color: var(--cor6);
+    margin: 0px;
+}
+
+#destino i.fas {
+    padding-right: 5px;
+}
+
+/*  Título Destaque  */
+#destaque > .titulo {
+    text-align: center;
+    padding: 50px;
+    margin-top: 40px;
+}
+
+#destaque .titulo > p {
+    font-family: var(--font-satisfy);
+    font-size: 1.8em;
+    color: var(--cor4);
+}
+
+#destaque .titulo > p.sombra {
+    position: relative;
+    margin: auto;
+    margin-top: -170px;
+    font-size: 120px;
+    color: var(--cor6);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#destaque .titulo > h1 {
+    font-family: var(--font-bebas);
+    font-size: 3em;
+    color: var(--cor2);
+}
+
+/*  Card Destaque  */
+#destaque .row {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#destaque .col-lg-3 {
+    margin: auto;
+    padding-top: 40px;
+}
+
+#destaque .card-design {
+    margin-bottom: 90px;
+}
+
+#destaque .card-design .imagem {
+    width: 100%;
+    height: 280px;
+}
+
+#destaque .card-design .imagem > img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#destaque .card-design .card-text {
+    background-color: var(--cor5);
+    width: 90%;
+    margin: auto;
+    margin-top: -20px;
+    padding: 20px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 0.8em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.418);
+}
+
+#destaque .card-design .item {
+    align-self: center;
+}
+
+#destaque .card-design i.fas {
+    color: var(--cor4);
+    margin-right: 5px;
+}
+
+#destaque .card-design p.texto {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#destaque .card-design button {
+    margin: 0px;
+    padding: 8px 15px;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor4);
+}
+
+/*  Título Exibição  */
+#exibicao .swiper {
+    padding: 50px 0px;
+    background-color: var(--cor2);
+}
+
+#exibicao .titulo {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#exibicao .titulo > p {
+    font-family: var(--font-satisfy);
+    font-size: 1.8em;
+    color: var(--cor3);
+    position: relative;
+    z-index: 1;
+}
+
+#exibicao .titulo > p.sombra {
+    color: var(--cor5);
+    font-size: 120px;
+    opacity: 0.1;
+    margin-top: -170px;
+    z-index: 0;
+}
+
+#exibicao .titulo > h1 {
+    font-family: var(--font-bebas);
+    font-size: 3em;
+    color: var(--cor5);
+}
+
+#exibicao .swiper-wrapper {
+    max-width: 1300px;
+    margin: auto;
+}
+
+#exibicao .swiper-slide > img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/*  Serviços  */
+#exibicao .servicos {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#exibicao .servicos .row {
+    padding: 0px!important;
+    width: 100%;
+    margin: auto;
+}
+
+#exibicao .cards-design {
+    padding: 30px 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+#exibicao .servicos p {
+    text-align: justify;
+}
+
+#exibicao .servicos i.fa-solid {
+    color: var(--cor4);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#exibicao .servicos a {
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+/*  Título Lista  */
+#lista .titulo {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#lista .titulo > p {
+    font-family: var(--font-satisfy);
+    font-size: 1.8em;
+    color: var(--cor4);
+    position: relative;
+    z-index: 1;
+}
+
+#lista .titulo > p.sombra {
+    color: var(--cor6);
+    font-size: 120px;
+    opacity: 0.2;
+    margin-top: -170px;
+    z-index: 0;
+}
+
+#lista .titulo > h1 {
+    font-family: var(--font-bebas);
+    font-size: 3em;
+    color: var(--cor2);
+}
+
+/*  Cards Lista  */
+#lista .row {
+    margin: auto;
+    padding: 20px;
+}
+
+#lista .col-lg-3 {
+    margin: auto;
+    padding: 10px;
+}
+
+#lista .card-design .imagem {
+    width: 100%;
+    height: 280px;
+}
+
+#lista .card-design .imagem > img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#lista .card-design .itens {
+    background-color: var(--cor5);
+    width: 90%;
+    margin: auto;
+    margin-top: -20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#lista .card-design .item {
+    align-self: center;
+}
+
+#lista .card-design .item i.fas {
+    color: var(--cor4);
+    margin-right: 5px;
+}
+
+#lista .card-text {
+    padding-top: 30px;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+}
+
+#lista .card-text > p {
+    text-align: justify;
+    padding:10px;
+    font-size: 0.8em;
+}
+
+#lista .card-footer {
+    display: flex;
+    margin-top: -16px;
+    padding:10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+    align-items: center;
+    border-top: none;
+}
+
+#lista .card-footer > i.fas {
+    color: var(--cor4);
+    padding-right: 5px;
+    align-self: center;
+}
+
+#lista .card-footer > p {
+    margin: auto;
+}
+
+#lista .card-footer .preco {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+/*  Oferta Título  */
+#oferta .titulo {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#oferta .titulo > p {
+    font-family: var(--font-satisfy);
+    font-size: 1.8em;
+    color: var(--cor4);
+    position: relative;
+    z-index: 1;
+}
+
+#oferta .titulo > p.sombra {
+    color: var(--cor6);
+    font-size: 120px;
+    opacity: 0.2;
+    margin-top: -170px;
+    z-index: 0;
+}
+
+#oferta .titulo > h1 {
+    font-family: var(--font-bebas);
+    font-size: 3em;
+    color: var(--cor2);
+}
+
+/*  Card Oferta  */
+#oferta .row {
+    width: 100%;
+    margin: 0px;
+}
+
+#oferta .col-lg-4 {
+    margin-bottom: 40px;
+}
+
+#oferta .card-oferta {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#oferta .oferta0 {
+    background-image: url(../imagens/roma.jpg);
+    max-width: 300px;
+    margin: auto;
+}
+
+#oferta .oferta1 {
+    background-image: url(../imagens/santorini.jpg);
+    max-width: 300px;
+    margin: auto;
+}
+
+#oferta .oferta2 {
+    background-image: url(../imagens/cairo.jpg);
+    max-width: 300px;
+    margin: auto;
+}
+
+#oferta .oferta3 {
+    background-image: url(../imagens/fussen.jpg);
+    max-width: 300px;
+    margin: auto;
+}
+
+#oferta .oferta4 {
+    background-image: url(../imagens/melbourne.jpg);
+    max-width: 300px;
+    margin: auto;
+}
+
+#oferta .oferta5 {
+    background-image: url(../imagens/lombardia.jpg);
+    max-width: 300px;
+    margin: auto;
+}
+
+#oferta .card-oferta .imagem {
+    border: 5px solid var(--cor5);
+    border-radius: 100%;
+    max-width: 110px;
+    max-height: 110px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#oferta .card-oferta .content {
+    margin-top: 20px;
+    color: var(--cor5);
+    padding: 140px 0px 5px 0px
+}
+
+#oferta .card-oferta .content button {
+    font-size: 0.8em;
+    color: var(--cor5);
+    border: 1px solid var(--cor5);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#oferta .card-oferta .content button:hover {
+    transition: 0.5s;
+    background-color: var(--cor5);
+    color: var(--cor4);
+}
+
+#oferta .card-oferta p {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*  Footer  */
+footer {
+    padding: 50px 20px 0px 20px;
+    background-color: var(--cor2);
+    color: var(--cor5);
+}
+
+footer .col-lg-3 {
+    margin: auto;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+footer p.titulo {
+    font-size: 1.5em;
+}
+
+footer ul.social {
+    display: flex;
+    padding: 0px;
+}
+
+footer ul.social > li {
+    padding-right: 10px;
+}
+
+footer ul.social a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+footer ul.social a:hover {
+    transition: 0.5s;
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0px;
+}
+
+footer ul a {
+    color: var(--cor5);
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul a:hover {
+    transition: 0.5s;
+    color: var(--cor4);
+}
+
+/*  Footer Copy  */
+footer .copy-right {
+    display: flex;
+    width: 350px;
+    margin: auto;
+}
+
+footer .copy-right p.titulo {
+    color: var(--cor4);
+    margin-right: 10px;
+}
+
+footer .copy-right p {
+    align-self: center;
+}
+
+footer .copy-right a {
+    color: var(--cor5);
+}
+
+footer .copy-right a:hover {
+    color: var(--cor4);
+}
+
+/*  Responsivo  */
+@media only screen and (max-width: 600px){
+    div.top-header {
+        flex-direction: column;
+    }
+    
+    div.top-header > ul {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    div.top-header > ul li {
+        margin: 5px 10px;
+    }
+
+    #banner .legenda {
+        font-size: 0.8em;
+    }
+    
+    #destino {
+        box-shadow: none;
+    }
+
+    #destino .opcoes-destino {
+        flex-direction: column;
+        width: 320px;
+        margin: auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.418);
+    }
+
+    #destino .item {
+        width: 100%;
+        align-self: center;
+        padding: 10px;
+    }
+
+    #destaque > .titulo {
+        font-size: 0.8em;
+    }
+    
+    #destaque .titulo > p {
+        margin-bottom: 0px;
+    }
+
+    #destaque .titulo > p.sombra {
+        margin-top: -120px;
+        font-size: 80px;
+    }
+
+    #exibicao .titulo > h1 {
+        font-size: 1.8em;
+    }
+
+    #exibicao .titulo > p.sombra {
+        font-size: 60px;
+        margin-top: -100px;
+    } 
+
+    #exibicao .titulo > p {
+        font-size: 1.4em;
+        margin-bottom: 0px;
+    }
+
+    #exibicao .servicos .row {
+        padding: 0px 20px;
+    }
+
+    #lista .titulo > h1 {
+        font-size: 2em;
+    }
+
+    #lista .titulo > p.sombra {
+        font-size: 70px;
+        margin-top: -110px;
+    }
+
+    #lista .titulo > p {
+        margin-bottom: 0px;
+        font-size: 1.4em;
+    }
+
+    #oferta .titulo > h1 {
+        font-size: 2.4em;
+    }
+
+    #oferta .titulo > p.sombra {
+        font-size: 70px;
+        margin-top: -110px;
+    }
+
+    #oferta .titulo > p {
+        font-size: 1.4em;
+        margin-bottom: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 360px){
+    #banner .legenda {
+        font-size: 0.7em;
+    }
+
+    #destino .opcoes-destino {
+        width: 280px;
+        margin: auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.418);
+    }
+
+    #destaque > .titulo {
+        font-size: 0.6em;
+        margin-top: 70px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    #destaque .titulo > p.sombra {
+        margin-top: -90px;
+        font-size: 60px;
+    }
+
+    #destaque .titulo > p {
+        font-size: 2em;
+    }
+
+    #exibicao .titulo > h1 {
+        font-size: 1.6em;
+    }
+
+    #exibicao .titulo > p.sombra {
+        font-size: 50px;
+        margin-top: -85px;
+    } 
+
+    #exibicao .titulo > p {
+        font-size: 1.4em;
+        margin-bottom: 0px;
+    }
+
+    footer .copy-right {
+        max-width: 280px;
+    }
+
+    footer p.titulo {
+        font-size: 1em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
